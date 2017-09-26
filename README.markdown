@@ -2,6 +2,8 @@
 
 This is an intermediate level React workshop that covers topics and techniques that help you build apps that scale:
 
+### React modules:
+
 1. Creating custom components using Css in Js techniques with Glamorous 
 2. Refactoring large monolithic Dom into small flexible components
 3. Updating state using functional setState api
@@ -22,7 +24,27 @@ This is an intermediate level React workshop that covers topics and techniques t
 18. Create your own starter kit with webpack for react + redux (basic level)
 19. A look at React Boilerplate for scalable configuration patterns for large projects
 
-Interactive exercises with your trainer (me) will include:
+### Redux modules:
+
+1. Overview of Redux - turning on the lights
+2. Is Redux really necessary? Pros and Cons
+3. Building Blocks of Redux - Actions, Reducers and the Store
+4. Redux demo - redux without react -  Demo and Challenge
+5. Enterprise architecture for Redux - Re-Ducks
+6. Building Wallaby app with Re-Ducks - Demo and Challenge
+7. Using intermediate concepts like selectors in Redux
+8. A look at the redux ecosystem (focused on reducing boilerplate)
+9. Testing actions and reducers with Jest
+
+### React Router modules:
+
+1. The new mental model for React Router 4
+2. Deciphering <Switch> and exact - the most confusing parts of RR4
+3. Complex Nested layouts and sublayouts challenge and demo
+4. Using the render prop to render your components
+5. Building authenticated routes using Higher Order Components pattern (HOC)
+
+## Interactive exercises with your trainer (me) will include:
 
 1. Buildling a basic layout by refactoring html into small components
 2. Integrating Css in Js with Glamorous
@@ -34,19 +56,3 @@ Interactive exercises with your trainer (me) will include:
 8. Writing pure functions that can be tested easily
 9. Making api calls with async/await
 10. ...And more 😃
-
-This course assumes a certain level of comfort with:
-
-1. Arrow functions  ({ size = ‘small’ }) => ({ width: size === 'small' ? '80%' : '90%' })
-2. Dynamic object keys
-3. De-structuring Assignment: Array De-structuring
-4. De-structuring Assignment: Object De-structuring
-5. Using the Spread operator to merge objects and arrays ([…state, id: newState.id]) 
-6. Default parameters
-7. Object.assign 
-8. Complex ternary expressions -4
-9. Class level property syntax (arrow function this binding inside es6 classes)
-10. ES6 classes - constructors, getters and setters
-11. Promises
-12. Async/Await 
-13. Template literals
