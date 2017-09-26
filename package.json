@@ -5,7 +5,8 @@
   "main": "lib/index.js",
   "scripts": {
     "clean": "rimraf dist",
-    "build": "cross-env NODE_ENV=production webpack --config webpack.config.production.js",
+    "build":
+      "cross-env NODE_ENV=production webpack --config webpack.config.production.js",
     "lint": "eslint --ext .js,.jsx .",
     "deploy": "npm run clean & npm run build && surge -p .",
     "start": "cross-env NODE_ENV=development node server.js"
@@ -17,6 +18,12 @@
     "react": "15.4.2",
     "react-dom": "15.4.2",
     "spectacle": "^2.0.0"
+  },
+  "prettier": {
+    "printWidth": 80,
+    "singleQuote": false,
+    "trailingComma": "none",
+    "bracketSpacing": true
   },
   "devDependencies": {
     "babel-cli": "^6.16.0",
