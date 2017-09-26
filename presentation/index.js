@@ -71,10 +71,66 @@ export default class Presentation extends React.Component {
         transitionDuration={500}
         theme={theme}
       >
+        <Slide
+          transition={["fade"]}
+          bgImage="https://source.unsplash.com/jzU3TbR0U6A/1200x900"
+          bgDarken={0.5}
+        >
+          <Heading size={1} fit caps lineHeight={1} textColor="primary">
+            Welcome to React Redux Workshop
+          </Heading>
+          <Text margin="10px 0 0" textColor="tertiary" size={1} fit bold>
+            A 4 day journey to mastering React
+          </Text>
+        </Slide>
+        <Slide
+          transition={["fade"]}
+          bgImage="https://source.unsplash.com/anhQGEYbnV4/1200x900"
+          bgDarken={0.5}
+        >
+          <Heading size={1} fit caps lineHeight={1} textColor="primary">
+            What to Expect
+          </Heading>
+          <List textColor="tertiary">
+            <Appear>
+              <ListItem>A lot of code</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Hands On Challenges</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Good Conversations</ListItem>
+            </Appear>
+          </List>
+        </Slide>
+        <Slide
+          transition={["fade"]}
+          bgImage="https://source.unsplash.com/IClZBVw5W5A/1200x900"
+          bgDarken={0.5}
+        >
+          <Heading size={1} fit caps lineHeight={1} textColor="primary">
+            What are we building?
+          </Heading>
+        </Slide>
+        <Slide
+          transition={["fade"]}
+          bgImage="https://source.unsplash.com/y8CtjK0ej6A/1200x900"
+          bgDarken={0.5}
+        >
+          <Heading size={1} fit caps lineHeight={1} textColor="primary">
+            Ready to get started?
+          </Heading>
+          <Appear>
+            <Text margin="10px 0 0" textColor="tertiary" size={1} fit bold>
+              Git clone amite/wallaby
+            </Text>
+          </Appear>
+        </Slide>
         <Slide transition={["fade"]} bgColor="primary">
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-            Module Two - Basic Layout
+            Module One - Basic Layout
           </Heading>
+
           <Text margin="10px 0 0" textColor="tertiary" size={1} fit bold>
             Use JSX to create a heirarchical layout
           </Text>
