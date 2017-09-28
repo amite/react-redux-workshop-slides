@@ -645,6 +645,56 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide transition={["fade"]} bgColor="primary">
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+            Welcome to Day 2
+          </Heading>
+          <Text margin="10px 0 0" textColor="tertiary" fit bold>
+            What we are covering today
+          </Text>
+          <List>
+            <Appear>
+              <ListItem>React Forms</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Using Third Party Components</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Adding API server</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Working with Ajax and Apis</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Rendering a list view</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Testing in React</ListItem>
+            </Appear>
+          </List>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+            Some Javascript Sidebars
+          </Heading>
+          <List>
+            <Appear>
+              <ListItem>Currying your functions</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Immutable Updates</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Functional Composition</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Higher Order Functions</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Map Filter Reduce</ListItem>
+            </Appear>
+          </List>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
             Module Three - React Forms
           </Heading>
           <Text margin="10px 0 0" textColor="tertiary" size={1} fit bold>
