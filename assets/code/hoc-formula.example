@@ -1,0 +1,1 @@
+hocFactory:: W: React.Component => E: React.Component

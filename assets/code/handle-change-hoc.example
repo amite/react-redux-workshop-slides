@@ -1,0 +1,21 @@
+function handleChangeHOC(WrappedComponent) {
+  return class ChangeState extends React.Component { 
+    state = {
+      name: ''
+    }
+    onNameChange = (event) => {
+      this.setState({
+        name: event.target.value
+      })
+    }
+    render() {
+      const newProps = {
+        name: {
+          value: this.state.name,
+          onChange: this.onNameChange
+        }
+      }
+      return <WrappedComponent {...this.props} {...newProps}/>
+    }
+  }
+}

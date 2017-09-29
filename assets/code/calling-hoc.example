@@ -1,0 +1,4 @@
+export default HOC(MyReactComponent)
+
+// but can also look like:
+export default HOC1(HOC2)(HOC3)(MyReactComponent)

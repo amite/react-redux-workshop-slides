@@ -723,7 +723,7 @@ export default class Presentation extends React.Component {
               <ListItem>Controlled forms are attached to state</ListItem>
             </Appear>
             <Appear>
-              <ListItem>Uncontrolled forms are unattached to state</ListItem>
+              <ListItem>Uncontrolled forms are NOT attached to state</ListItem>
             </Appear>
           </List>
         </Slide>
@@ -886,11 +886,163 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide transition={["fade"]} bgColor="primary">
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+            Currying your functions
+          </Heading>
+          <Text margin="10px 0 0" textColor="tertiary" size={1} fit bold>
+            Let's add Notifications
+          </Text>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
             Module Five Refactoring State
           </Heading>
           <Text margin="10px 0 0" textColor="tertiary" size={1} fit bold>
             Real world data modeling with React
           </Text>
+        </Slide>
+        <Slide transition={["fade"]} bgImage="https://source.unsplash.com/hlCmJYNdlRU/1200x900"
+          bgDarken={0.5}>
+          <Heading size={1} fit caps lineHeight={1} textColor="primary">
+            Welcome to Day Three Session
+          </Heading>
+          <Text margin="10px 0 0" textColor="tertiary" size={1} fit bold>
+            Deeper into Functional Programming
+          </Text>
+          <List textColor="tertiary">
+          <Appear>
+            <ListItem>Higher Order Components</ListItem>
+          </Appear>
+          <Appear>
+            <ListItem>More about Currying</ListItem>
+          </Appear>
+          <Appear>
+            <ListItem>Redux (Just the basics)</ListItem>
+          </Appear>
+        </List>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+            And More React
+          </Heading>
+          <List>
+          <Appear>
+            <ListItem>Adding API server</ListItem>
+          </Appear>
+          <Appear>
+            <ListItem>Working with Ajax and Apis</ListItem>
+          </Appear>
+          <Appear>
+            <ListItem>Async/Await</ListItem>
+          </Appear>
+        </List>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+            Higher Order Components
+          </Heading>
+          <Text margin="10px 0 0" textColor="tertiary" size={1} fit bold>
+            What are they?
+          </Text>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+            A Higher Order Component (HOC)
+          </Heading>
+          <Text margin="10px 0 0" textColor="tertiary" size={1} fit bold>
+            is a Component that wraps and returns another Component 
+          </Text>
+          <Appear>
+          <CodePane
+            margin="10px 0 0"
+            textSize={20}
+            lang="js"
+            source={require("raw-loader!../assets/code/hoc-formula.example")}
+          />
+          </Appear>
+          <Appear>
+          <Text margin="10px 0 0" textColor="tertiary" size={1} fit>
+            W (WrappedComponent) is the React.Component being wrapped and 
+            E (Enhanced Component) is the new, HOC, React.Component being returned.
+          </Text>
+          </Appear>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+            But what does an HOC do?
+          </Heading>
+          <Text margin="10px 0 0" textColor="tertiary" size={1}  bold>
+            It can let you
+          </Text>
+          <Appear>
+          <List>
+            <Appear>
+              <ListItem>Reuse code</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Hijack your Rendering</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Manipulate Props</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Abstract state</ListItem>
+            </Appear>
+          </List>
+          </Appear>
+        </Slide>
+
+        <Slide transition={["fade"]} bgColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+            So what does it look like?
+          </Heading>
+          <Appear>
+          <CodePane
+            margin="10px 0 0"
+            textSize={20}
+            lang="js"
+            source={require("raw-loader!../assets/code/common-signature.example")}
+          />
+          </Appear>
+          <Appear>
+          <CodePane
+            margin="10px 0 0"
+            textSize={20}
+            lang="js"
+            source={require("raw-loader!../assets/code/calling-hoc.example")}
+          />
+          </Appear>
+        </Slide>
+
+        <Slide transition={["fade"]} bgColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+            And also call it like this:
+          </Heading>
+          <Appear>
+          <CodePane
+            margin="10px 0 0"
+            textSize={20}
+            lang="js"
+            source={require("raw-loader!../assets/code/more-hoc.example")}
+          />
+          </Appear>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+            Passing Params to your HOC:
+          </Heading>
+          <Appear>
+          <CodePane
+            margin="10px 0 0"
+            textSize={20}
+            lang="js"
+            source={require("raw-loader!../assets/code/pass-params-to-hoc.example")}
+          />
+          </Appear>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+            Demo Time
+          </Heading>
         </Slide>
         <Slide transition={["fade"]} bgColor="primary">
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">

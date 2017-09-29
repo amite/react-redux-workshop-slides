@@ -1,0 +1,17 @@
+// this is curry in action
+function HOCFactoryFactory(params){
+  // do something with params
+  return function HOCFactory(WrappedComponent) {
+    return class HOC extends React.Component {
+      render() {
+        return <WrappedComponent {...this.props}/>
+      }
+    }
+  }
+}
+
+// use it like this:
+HOCFactoryFactory(params)(WrappedComponent)
+//or
+@HOCFactoryFactory(params)
+class WrappedComponent extends React.Component{}

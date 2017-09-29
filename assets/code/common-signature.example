@@ -1,0 +1,10 @@
+function HOC(WrappedComponent) {
+  return class Enhancer extends React.Component {
+    const enhancedProps ={
+      some: 'superpower'
+    }
+    render() {
+      return <WrappedComponent {...this.props} {...enhancedProps} />
+    }
+  }
+}
