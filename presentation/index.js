@@ -1422,6 +1422,21 @@ export default class Presentation extends React.Component {
             Redux without React
           </Text>
         </Slide>
+        <Slide transition={["fade"]} 
+          bgImage="https://source.unsplash.com/SLxbEMVNeqI/1200x900"
+          bgDarken={0.5}>
+          <Heading size={1} fit caps lineHeight={1} textColor="primary">
+            Day Four - The final frontier
+          </Heading>
+          <Text margin="10px 0 0" textColor="tertiary" size={1} fit bold>
+            More Redux + Scalable Architecture
+          </Text>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+            Redux Recap
+          </Heading>
+        </Slide>
         <Slide transition={["fade"]} bgColor="primary">
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
             First you create a store
@@ -1485,6 +1500,17 @@ export default class Presentation extends React.Component {
             source={require("raw-loader!../assets/code/redux-getstate.example")}
           />
         </Slide>
+        <Slide transition={["fade"]} bgColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+            Lastly, You connect your components
+          </Heading>
+          <CodePane
+            margin="10px 0 0"
+            textSize={20}
+            lang="js"
+            source={require("raw-loader!../assets/code/basic-connect.example")}
+          />
+        </Slide>
 
         <Slide transition={["fade"]} bgColor="primary">
           <Heading size={1} fit caps lineHeight={1} textColor="tertiary">
@@ -1512,6 +1538,39 @@ export default class Presentation extends React.Component {
           <Text margin="10px 0 0" textColor="tertiary" size={1} fit bold>
             https://hackernoon.com/my-journey-toward-a-maintainable-project-structure-for-react-redux-b05dfd999b5
           </Text>
+        </Slide>
+        <Slide>
+        <Heading size={3} fit caps lineHeight={1} textColor="secondary">
+            But first
+          </Heading>
+          <Text margin="10px 0 0" textColor="tertiary" size={1} fit bold>
+            Let's define what Architecture means
+          </Text>
+        </Slide>
+        <Slide>
+          <Heading size={3} fit caps lineHeight={1} textColor="secondary">
+            Good Architecture...
+          </Heading>
+          <List>
+            <Appear>
+              <ListItem>is easy to use</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>can handle complexity</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>friendly for beginners</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>enforces and encourages consistency</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                allows you to increase the quantity of code 
+                as the application grows, without adding complexity to the architecture
+              </ListItem>
+            </Appear>
+          </List>
         </Slide>
         <Slide transition={["fade"]} bgColor="primary">
           <Heading size={1} fit caps lineHeight={1} textColor="tertiary">
@@ -1543,17 +1602,6 @@ export default class Presentation extends React.Component {
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
             ...leading to a reduced boilerplate
           </Heading>
-        </Slide>
-        <Slide transition={["fade"]} bgColor="primary">
-          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-            Connect your component
-          </Heading>
-          <CodePane
-            margin="10px 0 0"
-            textSize={20}
-            lang="js"
-            source={require("raw-loader!../assets/code/basic-connect.example")}
-          />
         </Slide>
         <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
           <Heading size={2} fit textColor="tertiary" caps>
@@ -1646,7 +1694,11 @@ export default class Presentation extends React.Component {
           />
         </Slide>
 
+
         <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
+          <Heading size={1} fit textColor="secondary" caps>
+            It's time for Webpack Automation
+          </Heading>
           <Heading size={2} fit textColor="secondary" caps>
             🎉 Let's get started 🎉
           </Heading>
@@ -1902,6 +1954,59 @@ export default class Presentation extends React.Component {
             lang="js"
             source={require("raw-loader!../assets/code/choosing-the-right-api.example")}
           />
+        </Slide>
+        <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
+          <Heading size={2} fit textColor="tertiary" caps>
+            Coming up next...?
+          </Heading>
+          <List>
+            <Appear>
+              <ListItem>Nested complex Forms (with repeating fields) with Redux Form and React</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Validation rulesets with Revalidate</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Customising the airbnb react-date datepicker</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Building custom autosuggest with Downshift</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Immutable data structures with Immutable.js</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Static Typing with Typescript or Flow</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Serializing and normalising data with Normalizr</ListItem>
+            </Appear>
+          </List>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
+          <Heading size={2} fit textColor="tertiary" caps>
+            And more...
+          </Heading>
+          <List>
+            <Appear>
+              <ListItem>D3 Charts and more with React (Victory and Vx)</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Internationalisation with react-intl</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Customising the airbnb react-date datepicker</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Component API design and the RenderProps/Function as Child Pattern</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Full authentication workflow with Redux and React Router</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Multistep form wizards with Redux and React Router</ListItem>
+            </Appear>
+          </List>
         </Slide>
 
         <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
